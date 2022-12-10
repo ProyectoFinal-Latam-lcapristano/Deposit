@@ -31,7 +31,7 @@ public class DepositController {
 		return service.findById(id);
 	}
 	
-	@PostMapping("/deposit")
+	@PostMapping()
 	public ResponseEntity<Map<String, Object>> guardar(@RequestBody Deposit deposit){
 		Map<String, Object> result = new HashMap<String, Object>();
 		result.put("Transacción", "Deposito");
